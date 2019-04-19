@@ -1,11 +1,11 @@
 /*****************************************************************************
-* | File      	:	WSTouchPiano
-* | Author      :   Waveshare team
+* | File      	:	cokoinoTouchPiano
+* | Author      :   cokoino team
 * | Function    :	Contorl Piano  
 * | Info        :
 *----------------
-* |	This version:   V1.1
-* | Date        :   2018-05-22
+* |	This version:   V1.0
+* | Date        :   2019-04-19
 * | Info        :   Improve misidentification
 *
 * | Basic       :   2018-01-22
@@ -72,7 +72,7 @@ enum RGB_COLOR {
  * Operate the function of the piano board.
  */
 //% weight=20 color=#3333FF icon="\uf001"
-namespace WSTouchPiano {
+namespace cokoinoTouchPiano {
     //% blockId=tp_press 
     //% block="Pey|%index|is pressed"
     //% weight=100

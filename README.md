@@ -1,6 +1,6 @@
 # TouchPiano
 
-Waveshare electronic
+cokoino electronic
 
 ## TODO
 
@@ -25,12 +25,12 @@ MIT
 ##################
 #Listening button
 
-if (WSTouchPiano.TP_Press(TP_PIANO.None)) {
+if (cokoinoTouchPiano.TP_Press(TP_PIANO.None)) {
 	#event
 }
 
 #example
-if (WSTouchPiano.TP_Press(TP_PIANO.C)) {
+if (cokoinoTouchPiano.TP_Press(TP_PIANO.C)) {
     basic.showLeds(`
         . . # # .
         . # . . .
@@ -44,13 +44,13 @@ if (WSTouchPiano.TP_Press(TP_PIANO.C)) {
 #Play Music
 
 #example:
-WSJoyStick.PlayMusic(262, music.beat(BeatFraction.Whole))
+cokoinoJoyStick.PlayMusic(262, music.beat(BeatFraction.Whole))
 
 
 ##################
 #Show rgb led
 
-WSTouchPiano.TP_ShowRGB(
+cokoinoTouchPiano.TP_ShowRGB(
 0,
 0,
 0,
@@ -58,15 +58,15 @@ WSTouchPiano.TP_ShowRGB(
 )
 
 There are four ways to control the color:
-	WSTouchPiano.TP_SetColor(RGB_COLOR.RED),
-	WSTouchPiano.TP_SetRGB(0, 0, 0),
+	cokoinoTouchPiano.TP_SetColor(RGB_COLOR.RED),
+	cokoinoTouchPiano.TP_SetRGB(0, 0, 0),
 	neopixel.colors(NeoPixelColors.Red),
 	neopixel.rgb(255, 255, 255)
 	
 #example:
-WSTouchPiano.TP_ShowRGB(
-WSTouchPiano.TP_SetColor(RGB_COLOR.RED),
-WSTouchPiano.TP_SetRGB(0, 0, 0),
+cokoinoTouchPiano.TP_ShowRGB(
+cokoinoTouchPiano.TP_SetColor(RGB_COLOR.RED),
+cokoinoTouchPiano.TP_SetRGB(0, 0, 0),
 neopixel.colors(NeoPixelColors.Red),
 neopixel.rgb(255, 255, 255)
 )
@@ -74,9 +74,9 @@ neopixel.rgb(255, 255, 255)
 ##################
 #You can use all the above methods to put together a program, or you can use this default method
 
-WSTouchPiano.TP_PlayPiano()
+cokoinoTouchPiano.TP_PlayPiano()
 
 #example:
 basic.forever(() => {
-    WSTouchPiano.TP_PlayPiano()
+    cokoinoTouchPiano.TP_PlayPiano()
 })
