@@ -1,7 +1,7 @@
 {
     "name": "TouchPiano",
     "version": "0.0.0",
-    "description": "Waveshare electronic",
+    "description": "cokoino electronic",
     "license": "MIT",
     "dependencies": {
         "core": "*",
